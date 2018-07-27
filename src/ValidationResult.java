@@ -16,7 +16,7 @@ public class ValidationResult
 		StringBuilder sb = new StringBuilder();
 		Formatter f = new Formatter(sb);
 
-		f.format("<?xml version=\"1.0\"?>\n<result outcome=\"%s\" security=\"%s\">%s</result>",
+		f.format("{\"outcome\":\"%s\", \"security\":\"%s\"}",
 			outcome,
 			resultFileName,
 			message);
