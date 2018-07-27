@@ -16,9 +16,8 @@ public class ValidationResult
 		StringBuilder sb = new StringBuilder();
 		Formatter f = new Formatter(sb);
 
-		f.format("{\"outcome\":\"%s\", \"security\":\"%s\"}",
+		f.format("{\"result\":\"%s\", \"message\":\"%s\"}",
 			outcome,
-			resultFileName,
 			message);
 
 		return sb.toString();
